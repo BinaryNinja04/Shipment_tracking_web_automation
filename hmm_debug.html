@@ -1,0 +1,1497 @@
+<!DOCTYPE html><html lang="en"><head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge;Chromeframe=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="generator" content="">
+		<meta name="robots" content="ALL">
+		<meta property="og:type" content="">
+		<meta property="og:title" content="">
+		<meta property="og:description" content="">
+		<meta property="og:image" content="">
+		<meta property="og:url" content="">
+		<title>HMM</title>
+		<link rel="shortcut icon" type="image/x-icon" href="">
+		<link rel="stylesheet" type="text/css" href="/css/e-service/style.css?version=1.9992">
+
+		
+		<script src="https://cr.acecounter.com/Web/cookiesync.js?gc=AH2A43577377344&amp;rd=1748747796699"></script><script src="https://cr.acecounter.com/Web/AceCounter_AW.js?gc=AH2A43577377344&amp;py=0&amp;gd=gtp5&amp;gp=8080&amp;up=NaPm_Ncisy&amp;rd=1748747795205"></script><script defer="" src="/js/e-service/common.js?v=1.03"></script>
+	
+		<script type="text/javascript" src="/js/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/jquery/ui/1.13.2/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/js/jquery/mask.1.14.16/jquery.mask.min.js"></script>
+		
+		<script type="text/javascript" src="/js/common/common.js?v=1.00"></script>
+	
+		<script type="text/javascript"></script>
+		<script type="text/javascript">
+			var deviceType = 'nomal';
+		</script>
+
+		<!-- messages.properties System 공동 자바스크립 변수 처리 -->
+		
+    <script type="text/javascript">
+	    var MSG_SYS00001 = "Please contact administrator for more information.";
+	    var MSG_SYS00002 = "The inputted ID\/PW is invalid.";
+	    var MSG_SYS00003 = "The session has expired.  Please log-in again.";
+	    var MSG_SYS00004 = "It is invalid data.";
+	    var MSG_SYS00005 = "It is mandatory item.";
+	    var MSG_SYS00006 = "You have entered the wrong password 5 times and cannot log in.\nPlease reset your password to access your account.";
+	    var MSG_SYS00007 = "Your ID isn't yet approved.";
+	    var MSG_SYS00008 = "In case of loading plastic scrap, please contact your CSR in HMM office to deposit a deposit. (USD 3,000 per container)";
+	    var MSG_SYS00009 = "In accordance with Iraqi customs regulations, You can't input \"General Cargo\" in description.";
+	    var MSG_SYS00010 = "Data for the booking number {0} can't be found due to the system error. ";
+	    var MSG_SYS00011 = "Booking No. is invalid.  Please input the valid booking number.";
+	    var MSG_SYS00012 = "There is no data found.";
+	    var MSG_SYS00013 = "Do you want to save information?";
+	    var MSG_SYS00014 = "Do you want to modify it?";
+	    var MSG_SYS00015 = "Do you want to delete it?";
+	    var MSG_SYS00016 = "Do you want to apply it?";
+	    var MSG_SYS00017 = "Do you want to cancel it?";
+	    var MSG_SYS00018 = "It is saved successfully.";
+	    var MSG_SYS00019 = "It is updated successfully.";
+	    var MSG_SYS00020 = "It is deleted successfully.";
+	    var MSG_SYS00021 = "It is approved successfully.";
+	    var MSG_SYS00022 = "It is cancelled successfully.";
+	    var MSG_SYS00023 = "Failed to save it.  Plesae try it again.";
+	    var MSG_SYS00024 = "Failed to update it.  Plesae try it again.";
+	    var MSG_SYS00025 = "Failed to delete it.  Plesae try it again.";
+	    var MSG_SYS00026 = "Failed to apply it.  Plesae try it again.";
+	    var MSG_SYS00027 = "Failed to cancel it.  Plesae try it again.";
+	    var MSG_SYS00028 = "File is uploaded successfully.";
+	    var MSG_SYS00029 = "Failed to upload file.  Plesae try it again.";
+	    var MSG_SYS00030 = "The session has expired.  Please log-in again.";
+	    var MSG_SYS00031 = "There Is no selected data.";
+	    var MSG_SYS00032 = "It isn't found file information.";
+	    var MSG_SYS00033 = "It is under development.";
+    </script>
+
+		<!-- AceCounter Log Gathering Script -->
+		
+    <!-- AceCounter Log Gathering Script V.8.0.2019080601   -->
+    <script type="text/javascript">
+    try {
+        var cName = "cookie_consent_level";
+        cName = cName + '=';
+        var cookieData = document.cookie;
+        var start = cookieData.indexOf(cName);
+        var cValue = '';
+        if (start != -1) {
+            start += cName.length;
+            var end = cookieData.indexOf(';', start);
+            if (end == -1)
+                end = cookieData.length;
+            cValue = cookieData.substring(start, end);
+        }
+        //whether gathering tracking(acecounter) with the cookie consent (devTop.jsp)
+        if (cValue && !JSON.parse(unescape(cValue)).tracking) {
+                    //console.log("do not allow tracking");
+        } else {
+			/* for www.hmm21.com, AceCounter Log Gathering Script V.8.0.AMZ2019080601 */
+			var _AceGID=(function(){var Inf=['gtp5.acecounter.com','8080','AH2A43577377344','AW','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src ="https://"+ Inf[0] +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
+			var _AceCounter=(function(){var G=_AceGID;var _sc=document.createElement('script');var _sm=document.getElementsByTagName('script')[0];if(G.o!=0){var _A=G.val[G.o-1];var _G=(_A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];var _U=(_A[5]).replace(/\,/g,'_');_sc.src='https:'+'//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&py='+_A[4]+'&gd='+_G+'&gp='+_A[1]+'&up='+_U+'&rd='+(new Date().getTime());_sm.parentNode.insertBefore(_sc,_sm);return _sc.src;}})();
+			/* AceCounter Log Gathering Script End */
+        }
+    } catch (e) {
+        console.log(e);
+    }
+    </script>
+    <!-- AceCounter Log Gathering Script End -->
+
+
+		<!-- 선택 메뉴 class on 처리  -->
+		
+			
+		
+			
+		
+			<script type="text/javascript">
+				esvcMnuRootMnuNo = 'M001000000000';
+			</script>
+		
+
+		<!-- 컨텐츠페이지의 CSS 영역이 들어감 -->
+		
+		<link rel="stylesheet" type="text/css" href="/css/e-service/style.css?version=1.5">
+		<link rel="stylesheet" href="/css/e-service/common/slick.css">
+		<link rel="stylesheet" type="text/css" href="/css/e-service/pages/dashboard/dashboard.css?version=1.07">
+		<link rel="stylesheet" type="text/css" href="/css/e-service/common/slick.css?version=1.0">
+		<style>
+			.hidden {
+				display: none;
+			}
+			.box-inner.pending-task .cont-list .cont-item.disabled > a {
+				cursor: default;
+			}
+		</style>
+	
+
+		<!-- 컨텐츠페이지의 스크립트 영역이 들어감 -->
+		
+		
+
+	<script>
+    var MSG_BIZ00284 = "Please select \"Origin Location\".";
+    var MSG_BIZ00287 = "Please select \"Destination Location\".";
+    var MSG_BIZ00499 = "It is invalid date format.";
+    var MSG_BIZ00968 = "Please select port pame.";
+    var MSG_BIZ00969 = "Please select pessel pame.";
+    var MSG_BIZ00970 = "There is no GRM No. to search.";
+    var MSG_BIZ00971 = "My Schedule can be registered up to 18.";
+    var MSG_BIZ00496 = "It is already registered.";
+    var MSG_BIZ00424 = "This menu can be used after login.";
+    var MSG_BIZ00972 = "Please retrieve and select one.";
+    var MSG_BIZ00469 = "It is registered successfully.";
+    var MSG_BIZ01044 = "Please input \"From\" \/ \"To\".";
+    var MSG_BIZ00993 = "Please fill required value(s).";
+	</script>
+</head><body>
+
+		<script type="text/javascript">
+			IS_MOB = false;
+
+			var MSG_BIZ00469 = "It is registered successfully.";
+			var MSG_BIZ00379 = "It is deleted successfully.";
+			var MSG_BIZ01057 = "If you want to see your financial information, please contact HMM CS or accounting staffs.";
+			var MSG_BIZ01119 = "Please input keyword at least 3 digits";
+			let MSG_BIZ02039 = "You have already registered to {0}.";
+			let MSG_BIZ02040 = "Proceeding to create a CargoX (Electronic B\/L Service Provider) account.<br\/>To link your HMM account with CargoX, please click the confirm button below and proceed.<br\/>(Even if you already have a CargoX account, please click the \"Confirm\" button to link the account.)";
+		</script>
+		<script type="text/javascript" src="/data_files/ebiz/locationJS/CitiesList.js"></script>
+
+
+		<script type="text/javascript" src="/js/common/luxon.min.js"></script>
+		<script type="text/javascript" src="/js/e-service/general/myHMM/emailSubscription.js?version=1.1"></script>
+		<script type="text/javascript" src="/js/e-service/general/schedule/scheduleGoPost.js?version=1.2"></script>
+		<script type="text/javascript" src="/js/e-service/general/schedule/schedule_common.js?version=1.2"></script>
+		<script type="text/javascript" src="/js/e-service/general/schedule/MySchedulePopup.js?version=1.3"></script>
+		<script type="text/javascript" src="/data_files/ebiz/locationJS/CitiesList.js"></script>
+
+
+		<script type="text/javascript" src="/js/jqueryAutoComplete/jquery.autocomplete.js"></script>
+		<script type="text/javascript" src="/js/e-service/general/dashBoard/dashBoard.js?version=1.4704"></script>
+		<script type="text/javascript" src="/js/e-service/alert.js?version=1.0"></script>
+		<script defer="" src="/js/jquery/3.6.0/jquery.min.js?version=1.0"></script>
+	    <script defer="" src="/js/e-service/slick.min.js?version=1.0"></script>
+	    <script defer="" src="/js/e-service/index-popup.js?version=1.0"></script>
+	
+
+		
+			<meta name="_csrf" content="ade6a9fc-50d8-4c4d-8c70-f2529741a440">
+			<meta name="_csrf_header" content="X-CSRF-TOKEN">
+		
+		
+	<script>bazadebezolkohpepadr="948679033"</script><script type="text/javascript" src="https://www.hmm21.com/akam/13/388bb2f6" defer=""></script>
+		
+			
+			<!-- 상단 gnb 영역 -->
+			<div>
+        <div class="gnb">
+            <div style="display:none">
+                <div>IN</div>
+                <div>nomal</div>
+            </div>
+            <div class="gnb-inner">
+                <div class="gnb-item logo">
+                    <h1 class="icon" style="cursor:pointer;" onclick="location.href='/e-service/general/DashBoard.do'"></h1>
+                </div>
+                <div class="gnb-item search">
+                    <button type="button" class="icon" onclick="esvcGlobalSearch()">검색</button>
+                    <input type="text" placeholder="B/L, Booking, CNTR No., Keywords" id="esvcGlobalQuery" onkeyup="enterGlobalSearch(this)">
+                </div>
+            </div>
+            <div class="gnb-inner">
+                <div class="gnb-item func">
+                    <ul class="func-list">
+                        <li class="icon helpdesk" style="cursor:pointer;" title="Valued Opinion" onclick="location.href='/e-service/general/valuedOpinion/valuedOpinion.do'">
+                            <button type="button">Valued Opinion</button>
+                        </li>
+                        <li class="icon myreport" style="cursor:pointer;" title="Document Center" onclick="location.href='/e-service/cmsBoard/CmsBoard.do?sc1=C005'">
+                            <button type="button">Document Center</button>
+                        </li>
+                        <li class="icon mynote" style="cursor:pointer;" title="Office &amp; Contact" onclick="location.href='/e-service/information/officeContact.do'">
+                            <button type="button">Office &amp; Contact</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gnb-item profile">
+                    
+                    
+                        <button type="button" class="btn-profile" onclick="location.href='/e-service/auth/login.do'">Login</button>
+                    
+                </div>
+                <div class="gnb-item site">
+                    <a href="/company.do" target="_blank">Company Site</a>
+                </div>
+            </div>
+        </div>
+        <div class="mo-gnb">
+            <div class="gnb-inner">
+                <div class="gnb-item menu">
+                    <button type="button" class="icon btn-menu" onclick="javascript:void(0);"></button>
+                </div>
+                <div class="gnb-item logo">
+                    <h1 class="icon" style="cursor:pointer;" onclick="location.href='/e-service/general/DashBoard.do'"></h1>
+                </div>
+
+                
+                
+                    <div class="gnb-item">
+                        <button type="button" class="btn line small" onclick="location.href='/e-service/auth/login.do'">Log in</button>
+                    </div>
+                
+
+            </div>
+            <form id="esvcLogoutForm" action="/e-service/auth/logout.do" method="POST">
+                <input type="hidden" name="csrfHeader" value="X-CSRF-TOKEN">
+                <input type="hidden" name="_csrf" value="ade6a9fc-50d8-4c4d-8c70-f2529741a440">
+            </form>
+        </div>
+    </div>
+			<!-- left lnb 영역 -->
+			<div class="lnb">
+        <nav>
+			<a href="#" class="nav-item"><div class="icon all">All</div><div class="nav-text">All</div></a><a href="javascript:navClick('subDep1')" class="nav-item on" id="lvl1-M001000000000"><div class="icon general">General</div><div class="nav-text">General</div></a><a href="javascript:navClick('subDep2')" class="nav-item" id="lvl1-M002000000000"><div class="icon rate">Rate &amp; Tariff</div><div class="nav-text">Rate &amp; Tariff</div></a><a href="javascript:navClick('subDep3')" class="nav-item" id="lvl1-M019000000000"><div class="icon hiquote">Hi Quote</div><div class="nav-text">Hi Quote</div></a><a href="javascript:navClick('subDep4')" class="nav-item" id="lvl1-M003000000000"><div class="icon export">Export</div><div class="nav-text">Export</div></a><a href="javascript:navClick('subDep5')" class="nav-item" id="lvl1-M004000000000"><div class="icon import">Import</div><div class="nav-text">Import</div></a><a href="javascript:navClick('subDep6')" class="nav-item" id="lvl1-M005000000000"><div class="icon payment">Invoice Payment</div><div class="nav-text">Invoice Payment</div></a><a href="javascript:navClick('subDep7')" class="nav-item" id="lvl1-M006000000000"><div class="icon vendor">Vendor Partners</div><div class="nav-text">Vendor Partners</div></a><a href="javascript:navClick('subDep8')" class="nav-item" id="lvl1-M015000000000"><div class="icon info">Information</div><div class="nav-text">Information</div></a>
+			
+        </nav>
+		<div class="active-nav-icon" style="top: 20px;"></div>
+        <div class="sub-area scrollbar-y">
+            <ul class="sub-list">
+            	<li class="sub-item"><a href="javascript:void(0);" class="sub-inner dep1" id="subDep1" data-tagid="sub-inner-dep1">General</a><ul class="dep2-list"><li class="dep2-item"><div class="deps-link"><a href="/e-service/general/myHMM/emailSubsription.do" class="dep2">Email Subscription</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/general/myReport/MyReport.do" class="dep2">My Report</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/general/DashBoard.do" class="dep2">Dashboard</a></div></li><li class="dep2-item"><div class="deps-link"><a href="javascript:void(0);" class="dep2">Schedule</a></div><ul class="dep3-list"><li class="dep3-item"><div class="deps3-link"><a href="/e-service/general/schedule/ScheduleMain.do" class="dep3">Schedule</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/general/schedule/localSchedule.do" class="dep3">Local Schedule (JP)</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/general/schedule/serviceNetwork/serviceNetworkCustomizedMain.do" class="dep3">Service Network</a></div></li></ul></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/general/trackNTrace/TrackNTrace.do" class="dep2">Track &amp; Trace</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/general/responsibilityRetrieve/ResponsibilityRetrieve.do" class="dep2">담당자 및 마감 시간 조회</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/general/carbonCalc/index.do" class="dep2">Supply Chain Carbon Calculator</a></div></li></ul></li><li class="sub-item"><a href="javascript:void(0);" class="sub-inner dep1" id="subDep2" data-tagid="sub-inner-dep1">Rate &amp; Tariff</a><ul class="dep2-list"><li class="dep2-item"><div class="deps-link"><a href="/e-service/general/tariffRate/HmmTariff.do" class="dep2">HMM Tariff (United States)</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/general/tariffRate/SurchargeInquiry.do" class="dep2">Surcharge Inquiry</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/general/tariffRate/surchargeCodeInquiry.do" class="dep2">Surcharge Code Inquiry</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/general/tariffRate/DemDetTariff.do" class="dep2">DEM/DET Tariff (Basic)</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/general/penaltyNotice/PenaltyNotice.do" class="dep2">Penalty Notice</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/general/exchangeRate/ExchangeRate.do" class="dep2">Exchange rate</a></div></li></ul></li><li class="sub-item"><a href="javascript:void(0);" class="sub-inner dep1" id="subDep3" data-tagid="sub-inner-dep1">Hi Quote</a><ul class="dep2-list"><li class="dep2-item"><div class="deps-link"><a href="/e-service/hiquote/quotationNew.do" class="dep2">Quotation</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/hiquote/faq/FaqHeader.do" class="dep2">FAQs &amp; User Guide</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/hiquote/hiquoteDashboard/hiquoteDashboard.do" class="dep2">Hi Quote Dashboard</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/hiquote/TermNCondition.do" class="dep2">Terms &amp; Conditions</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/hiquote/fmcReqHiquote/fmcReqHiquote.do" class="dep2">FMC Requirements (US)</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/hiquote/voc/main.do" class="dep2">Voice of Customer</a></div></li></ul></li><li class="sub-item"><a href="javascript:void(0);" class="sub-inner dep1" id="subDep4" data-tagid="sub-inner-dep1">Export</a><ul class="dep2-list"><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/myExport/MyExport.do" class="dep2">My Export</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/bookingrequest/BookingStepByStep1.do" class="dep2">Booking Step by Step</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/myExport/MyExport.do?" class="dep2">Input S/I</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/dgApplication/dgApplication.do" class="dep2">DG Application</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/oog/oogApp.do" class="dep2">OOG Application</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/flexibagApplication/flexibagApplication.do" class="dep2">Flexibag Application</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/socContainerApplication/SocContainerApplication.do" class="dep2">SOC Container Application</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/vgmEntry/vgmEntry.do" class="dep2">VGM Entry</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/general/vgmWithoutLogin/vgmWithoutLogin.do" class="dep2">VGM without Login</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/preparebl/submission.do" class="dep2">Export AES/CAED Submission</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/houseBl/HouseBl.do" class="dep2">House B/L</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/releaseBl/blIssue.do" class="dep2">B/L Issue</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/releaseBl/eBlPrint.do" class="dep2">Internet O. B/L Print</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/releaseBl/blCertificate.do" class="dep2">B/L Certificate</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/templateManagement/templateManagement.do" class="dep2">B/L &amp; Booking Template</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/releaseBl/paperOrder.do" class="dep2">B/L Paper Order</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/streetTurnRequest/StreetTurnRequest.do" class="dep2">Street Turn Request</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/exportRailbilling/exportRailbilling.do" class="dep2">Export Rail Billing</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/statusQuickCheck/statusQuickCheck.do" class="dep2">Status Quick Check</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/export/demdet/demdet.do" class="dep2">DEM/DET Tariff (Contract)</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/MRNInquiry/MRNInquiry.do" class="dep2">MRN Inquiry</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/demDetInvoice/export.do" class="dep2">수출 DEM/DET Invoice Inquiry</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/export/eLoi/eLoi.do" class="dep2">e-LOI</a></div></li></ul></li><li class="sub-item"><a href="javascript:void(0);" class="sub-inner dep1" id="subDep5" data-tagid="sub-inner-dep1">Import</a><ul class="dep2-list"><li class="dep2-item"><div class="deps-link"><a href="/e-service/import/myImport/MyImport.do" class="dep2">My Import</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/import/smryInquiry/ImpSmryInqSimple.do" class="dep2">Quick Inquiry without Login</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/import/quickInquiry/ImpQuckInq.do" class="dep2">수입 B/L 간편 정보 조회</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/paymentInvoice/invoice/surchargeList.do" class="dep2">수입 Invoice 조회 (Prepaid,비로그인)</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/paymentInvoice/krNominee/krNominee.do" class="dep2">수입 위임장 (수입 위임 조회 및 등록)</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/import/transferTakeover/transfer.do" class="dep2">양도양수증 등록</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/import/demDetInvoice/import.do" class="dep2">수입 DEM/DET Invoice 조회</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/import/import/demdet/demdet.do" class="dep2">DEM/DET Tariff (Contract)</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/import/quickInquiry/DomImpSchgRt.do" class="dep2">국내 수입 Surcharge 요율</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/import/modifyTax/modifyTaxReq.do" class="dep2">수정세금계산서</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/import/doorDlvrRq/doorDlvrRqIntro.do" class="dep2">Door Delivery Request (US)</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/import/emptyContainerNotification/EmptyContainerNotification.do" class="dep2">Empty Container Notification</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/import/customsRefNoInq/CustomsRefNoInq.do" class="dep2">Customs Reference (ATB) No. Inquiry</a></div></li></ul></li><li class="sub-item"><a href="javascript:void(0);" class="sub-inner dep1" id="subDep6" data-tagid="sub-inner-dep1">Invoice Payment</a><ul class="dep2-list"><li class="dep2-item"><div class="deps-link"><a href="/e-service/paymentInvoice/dashBoard/myHAP.do" class="dep2">Finance Dashboard</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/paymentInvoice/invoice/ProformaInvoiceList.do" class="dep2">Proforma Invoice</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/paymentInvoice/invoice/AllIssuedInvoiceList.do" class="dep2">Invoice</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/paymentInvoice/processing/PaymentProcessing.do" class="dep2">Payment Status</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/paymentInvoice/dispute/Dispute.do" class="dep2">My Dispute</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/paymentInvoice/demurrage/DemurragePayment.do" class="dep2">Demurrage Payment</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/paymentInvoice/demdet/DemdetDetail.do" class="dep2">수출 Dem/Det(이체증) 간편 입력</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/paymentInvoice/invoice/surchargeList.do" class="dep2">수입 Surcharge 조회</a></div></li></ul></li><li class="sub-item"><a href="javascript:void(0);" class="sub-inner dep1" id="subDep7" data-tagid="sub-inner-dep1">Vendor Partners</a><ul class="dep2-list"><li class="dep2-item"><div class="deps-link"><a href="/e-service/vendorPartners/gateInNout.do" class="dep2">Gate In &amp; Out</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/vendorPartners/dropOffRequest/dropOffRequest.do" class="dep2">Drop off Request</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/vendorPartners/streetRequest.do" class="dep2">복화 요청</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/vendorPartners/usStgReq.do" class="dep2">Street Turn Request w/ Payment</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/vendorPartners/LoadingInquiry.do" class="dep2">상/하차지 조회</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/vendorPartners/DummyReturn.do" class="dep2">Dummy 컨테이너 반납지</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/vendorPartners/railBilling/webRailBilling.do" class="dep2">Empty Container Rail Billing</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/vendorPartners/payment/paymentInquiry.do" class="dep2">Payment Inquiry</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/vendorPartners/payment/paymentStatus.do" class="dep2">Payment Status</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/vendorPartners/trucker/truckerQuickCheck.do" class="dep2">Trucker Quick Check</a></div></li><li class="dep2-item"><div class="deps-link"><a target="_blank" href="https://dcli.com/equipment-lookup/" class="dep2">Chassis Info for Customer</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/vendorPartners/rfCntrMonitoringSvc.do" class="dep2">RF CNTR Temp. Monitoring SVC</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/vendorPartners/iotMonitoringService.do" class="dep2">IoT monitoring SVC</a></div></li></ul></li><li class="sub-item"><a href="javascript:void(0);" class="sub-inner dep1" id="subDep8" data-tagid="sub-inner-dep1">Information</a><ul class="dep2-list"><li class="dep2-item"><div class="deps-link"><a href="/e-service/cmsBoard/CmsBoard.do?sc1=C004" class="dep2">News &amp; Notice</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/cmsBoard/CmsBoard.do?sc1=C005" class="dep2">Document Center</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/information/officeContact.do" class="dep2">Office &amp; Contact</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/information/office/Office.do" class="dep2">カウンター営業時間</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/information/contact/Contact.do" class="dep2">联系方式</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/information/eNewsletter/ENewsletter.do" class="dep2">e-Newsletter</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/information/terminal/TerminalInfo.do" class="dep2">Terminal Information</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/information/terminalFacilityInfo/terminalFacilityInfo.do" class="dep2">Terminal Facility Info</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/information/facilityCy/FacilityCy.do" class="dep2">Facility 情報</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/information/vesselFleets/VesselFleets.do" class="dep2">Vessel Fleet</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/information/containerInformation.do" class="dep2">Container Information</a></div></li><li class="dep2-item"><div class="deps-link"><a href="javascript:void(0);" class="dep2">Dangerous Cargo</a></div><ul class="dep3-list"><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/dangerousCargo/Introduction.do" class="dep3">Introduction</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/dangerousCargo/Class.do" class="dep3">Class</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/dangerousCargo/SegregationTable.do" class="dep3">Segregation table</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/dangerousCargo/ProhibitedRestrictedCargolist.do" class="dep3">Prohibited &amp; Restricted Cargo List</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/dangerousCargo/DgBlTerms.do" class="dep3">DG 的提单条款</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/dangerousCargo/OtherDefinitions.do" class="dep3">Other Definitions</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/general/dgPreCheck/DgPreCheck.do" class="dep3">DG Pre Check</a></div></li></ul></li><li class="dep2-item"><div class="deps-link"><a href="javascript:void(0);" class="dep2">Over Sized Cargo</a></div><ul class="dep3-list"><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/overSizedCargo/SpecialCargoOutline.do" class="dep3">Special Cargo Outline</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/overSizedCargo/CargoInformation.do" class="dep3">Cargo Information</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/overSizedCargo/Equipment.do" class="dep3">Equipment</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/overSizedCargo/CargoPhotos.do" class="dep3">Cargo Photos</a></div></li></ul></li><li class="dep2-item"><div class="deps-link"><a href="javascript:void(0);" class="dep2">Refrigerated Cargo Service</a></div><ul class="dep3-list"><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/refrigeratedCargo/RfIntroduction.do" class="dep3">Introduction</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/refrigeratedCargo/RfBenefit.do" class="dep3">HMM RF Service Benefit</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/refrigeratedCargo/RfEquipment.do" class="dep3">RF Equipment</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/refrigeratedCargo/RfHandling.do" class="dep3">RF Cargo Handling</a></div></li></ul></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/information/verifiedGrossMass.do" class="dep2">Verified Gross Mass</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/information/tareWeightLookUp/TareWeightLookUp.do" class="dep2">Tare Weight Look Up</a></div></li><li class="dep2-item"><div class="deps-link"><a href="javascript:void(0);" class="dep2">Intermodal Service</a></div><ul class="dep3-list"><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/intermodalService/UsIntermodalService.do" class="dep3">US Intermodal Service</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/intermodalService/UsDstTTimeInformation.do" class="dep3">US DST T/Time Information</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/intermodalService/UsRailRampLocation.do" class="dep3">US Rail Ramp Location</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/intermodalService/RelatedLinks.do" class="dep3">Related Links</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/intermodalService/NChinaIntermodalService.do" class="dep3">N.China Intermodal Service</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/intermodalService/SChinaIntermodalService.do" class="dep3">S.China Intermodal Service</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/intermodalService/PremiumInlandService.do" class="dep3">Premium Inland Service</a></div></li><li class="dep3-item"><div class="deps3-link"><a href="/e-service/information/weightLimitation/General.do" class="dep3">Road Weight Limitation</a></div></li></ul></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/information/weightLimitation/General.do" class="dep2">Weight Limitation</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/information/cargoClaimProcedure.do" class="dep2">Cargo Claim Procedure</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/information/securityRegulation/SecurityRegulation.do" class="dep2">Security &amp; Regulation</a></div></li><li class="dep2-item"><div class="deps-link"><a target="_blank" href="https://apiportal.hmm21.com/" class="dep2">Open API Portal</a></div></li><li class="dep2-item"><div class="deps-link"><a href="/e-service/cmsBoard/CmsBoard.do?sc1=C004012000000" class="dep2">FAQ</a></div></li></ul></li>
+            	
+            </ul>
+            <button type="button" class="icon btn-close">닫기</button>
+        </div>
+    </div>
+			
+				<div class="chatbot-info hidden">
+    
+</div>
+			
+
+			<!-- left lnb 영역 -->
+			<div class="mo-lnb scrollbar-y">
+        <ul class="lnb-list">
+        	<li class="lnb-item"></li>
+        	
+        </ul>
+        <div class="btn-wrap vertical gap-10 mt-30">
+            <button type="button" class="btn func noicon w-full large" onclick="desktopMode()">Full e-service</button>
+            <button type="button" class="btn func noicon w-full large" onclick="document.location.href='/company.do'">Company Site</button>
+        </div>
+        <button type="button" class="icon close"></button>
+    </div>
+
+			<!-- 컨텐츠 영역 -->
+			<div class="contents">
+			
+			
+			
+			
+			<div class="popup-wrap restrictions" style="display: none; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999;" data-popupid="agt_popup">
+		        <div class="popup-head">
+		            <div class="title">
+		                <span>Notice</span>
+		            </div>
+		            <button type="button" class="icon btn-close" onclick="comPopupClose('agt_popup',true)">닫기</button>
+		        </div>
+		        <div class="popup-body scrollbar-y">
+		            <div class="popup-slider-container slick-initialized slick-slider slick-dotted">
+		            	<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 631px; transform: translate3d(0px, 0px, 0px);"><div class="popup-inner slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00" style="width: 631px;">
+		                    <div class="text-detail-list">
+		                        <div style="width: 100%;height: 525px;">
+		                        	<p>
+		                        	  </p><div style="background-image: url('/images/e-service/pages/dashboard/ICN_EN.png'); background-size: cover; width:100000px; cursor:pointer;"></div>
+		                        	<p></p>
+		                        </div>
+		                    </div>
+		                </div></div></div>
+		            <ul class="slick-dots" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 1" tabindex="0" aria-selected="true">1</button></li></ul></div>
+		        </div>
+		        <div style="text-align: -webkit-center;position: relative;padding-top: 20px;">
+		        	<button type="button" class="btn medium" onclick="comPopupClose('agt_popup',true)">Close</button>
+		        </div>
+		        <div class="bt-btn-wrap select">
+		            <div class="field-wrap">
+		                <div class="input-item">
+		                    <div class="input-area">
+		                        <div class="input-inner">
+		                            <div class="input">
+		                                <div class="ckbox-area">
+		                                    <div class="ck-area">
+		                                        <input type="checkbox" id="notice-chk">
+		                                        <label class="ckbox" for="notice-chk">Do not open for a day</label>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+			
+			<!-- 컨텐츠 영역 -->
+			<div class="wrapper">
+				<input type="hidden" id="ebl" value="">
+				<!-- notification 영역 Start -->
+				
+	<div class="notification-wrap nobtn">
+		<div class="notification-box">
+			<ul>
+				
+			</ul>
+		</div>
+	</div>
+
+				<!-- notification 영역 End -->
+				<div class="content-inner">
+					<div class="box-wrap">
+						<!-- 대시보드 -->
+						<div class="box-area dashboard">
+							
+							<div class="box-inner quicklink">
+								<div class="box-title-wrap">
+									<h2 class="box-title">Quick Link</h2>
+									<div class="field-wrap">
+										<div class="input-item horiz">
+											<div class="input-area search">
+												<div class="input-inner">
+													<div class="input">
+														<input type="text" class="upper" placeholder="B/L, BOOKING, CNTR No." id="inputNo" style="padding-left: 10px; padding-right: 10px">
+														<span class="icon red emphasis">Invalid Value</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="content-wrap">
+									<div class="content-area">
+										<div class="content">
+											<ul class="cont-list">
+												<li class="cont-item">
+													<a href="javascript:void(0);" onclick="gotoBookingPage();" class="link">
+														<div class="icon booking">Booking</div>
+														<div class="text">Booking</div>
+													</a>
+												</li>
+												<li class="cont-item">
+													<a href="javascript:void(0);" onclick="gotoBlPage();" class="link">
+														<div class="icon bl">B/L</div>
+														<div class="text">S/I (B/L)</div>
+													</a>
+												</li>
+												<li class="cont-item">
+													<a href="javascript:void(0);" onclick="gotoVgmPage();" class="link">
+														<div class="icon vgm">VGM</div>
+														<div class="text">VGM</div>
+													</a>
+												</li>
+												
+												<li class="cont-item">
+													<a href="javascript:void(0);" onclick="gotoMyExport();" class="link">
+														<div class="icon export">My Export</div>
+														<div class="text">My Export</div>
+													</a>
+												</li>
+												
+												<li class="cont-item">
+													<a href="javascript:void(0);" onclick="gotoMyImport();" class="link">
+														<div class="icon import">My Import</div>
+														<div class="text">My Import</div>
+													</a>
+												</li>
+												<li class="cont-item">
+													<a href="/e-service/general/tariffRate/SurchargeInquiry.do" class="link">
+														<div class="icon surchg">Surcharge</div>
+														<div class="text">Surcharge</div>
+													</a>
+												</li>
+												<!--HP-1212-->
+												<li class="cont-item">
+													<a href="/e-service/general/carbonCalc/index.do" class="link">
+														<div class="icon eco">Carbon Calculator</div>
+														<div class="text">Carbon Calculator</div>
+													</a>
+												</li>
+												<li class="cont-item">
+													<a href="/e-service/information/officeContact.do" class="link">
+														<div class="icon contact">Office &amp; Contact</div>
+														<div class="text">Office &amp; Contact</div>
+													</a>
+												</li>
+												<li class="cont-item">
+													<a href="javascript:void(0);" onclick="gotoDemDet();" class="link">
+														<div class="icon demdet">DEM/DET (Freetime)</div>
+														<div class="text">DEM/DET (Freetime)</div>
+													</a>
+												</li>
+												
+												<!--HP-996-->
+												
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- hidden value -->
+						<div id="bkgNoList" style="display: none">
+							
+						</div>
+						<input type="hidden" id="userIdVal" value="">
+						<!-- hidden value -->
+						<!-- // 대시보드 -->
+						<!-- 스케줄 -->
+						<div class="box-area schedule">
+							<div class="box-inner">
+								<div class="box-title-wrap">
+									<h2 class="box-title">Schedule</h2>
+									<div class="btn-wrap">
+										
+	
+
+									</div>
+								</div>
+								<div class="tab-wrap type-line content-wrap" style="height: 434.55px;">
+									<div class="tab-head content-area">
+										<div class="tab-list-wrap content-tab">
+											<ul class="tab-list tab-head-list">
+												<li class="tab-item on">
+													<a href="javascript:void(0);">
+														<div class="tab">Point to Point</div>
+													</a>
+													<div class="tab-area schedule-con-area">
+														<div class="border-item">
+															<div class="field-wrap">
+																<div class="input-item col-2 fromto">
+																	<div class="input-area">
+																		<div class="label-area">
+																			<div class="label">From</div>
+																			<div class="sub-text">Input location name or code (at least 3 letters)</div>
+																		</div>
+																		<div class="input-inner">
+																			<div class="input" id="fromPt_area">
+																				<input type="text" name="fromPt" id="fromPt" autocomplete="off" class="ac_input">
+																				<input type="hidden" id="fromPt_code">
+																				<span class="icon red emphasis" id="fromPt_msg">Invalid Value</span>
+																			</div>
+																			<div class="input medium">
+																				<select name="fromCtPt" id="fromCtPt">
+																					<option selected="" value="CY">CY</option>
+																					<option value="DR">DR</option>
+																				</select>
+																				<span class="icon red emphasis">Invalid Value</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="trans-btn-wrap">
+																		<button type="button" class="icon trans" onclick="portChange()"></button>
+																	</div>
+																</div>
+																<div class="input-item col-2">
+																	<div class="input-area">
+																		<div class="label-area">
+																			<div class="label">To</div>
+																			<div class="sub-text">Input location name or code (at least 3 letters)</div>
+																		</div>
+																		<div class="input-inner">
+																			<div class="input" id="toPt_area">
+																				<input type="text" name="toPt" id="toPt" autocomplete="off" class="ac_input">
+																				<input type="hidden" id="toPt_code">
+																				<span class="icon red emphasis" id="toPt_msg">Invalid Value</span>
+																			</div>
+																			<div class="input medium">
+																				<select name="toCtPt" id="toCtPt">
+																					<option selected="" value="CY">CY</option>
+																					<option value="DR">DR</option>
+																				</select>
+																				<span class="icon red emphasis">Invalid Value</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="my-schedule border-item">
+															<div class="sub-title-wrap">
+																<div class="label">My Schedule</div>
+																<button type="button" class="btn wh func add" onclick="MySchedulePopup.popupMySchedule('popup_myschedule', {mySkdCd: 'N'}, callbackSaveMyScheduleDashboard)">My Schedule</button>
+															</div>
+															<!-- My Schedule -->
+															<div id="myScheduleArea" class="no-schedule">
+																
+																	<!-- 등록된 스케쥴이 없는 경우 노출  -->
+																	<div class="text">※ Please register your favorite schedule.</div>
+																	<!-- // 등록된 스케쥴이 없는 경우 노출  -->
+																
+																
+															</div>
+														</div>
+														<div class="border-item">
+															<div class="field-wrap gap-56 schedule-con-list">
+																<div class="input-item horizon">
+																	<div class="input-area">
+																		<div class="label-area">
+																			<div class="label">View Type</div>
+																		</div>
+																		<div class="input-inner">
+																			<div class="input">
+																				<label class="radio-area checked" id="labVieTypeL">
+																					<input type="radio" name="rdoViewType" value="L" checked="" autocomplete="off">
+																					<span class="radio-box"></span>
+																					<span>List</span>
+																				</label>
+																				<label class="radio-area" id="labVieTypeC">
+																					<input type="radio" name="rdoViewType" value="C" autocomplete="off">
+																					<span class="radio-box"></span>
+																					<span>Calendar</span>
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="input-area">
+																		<div class="label-area">
+																			<div class="label">Sailing date (by Vessel)</div>
+																		</div>
+																		<div class="input-inner" id="vtypeArea1">
+																			<div class="input" id="sailDt_area">
+																				<input type="date" name="sailDt" id="sailDt" format="YYYY-MM-DD" maxlength="10" autocomplete="off" style="width: 140px" min="2025-06-01" max="2025-09-01" onkeypress="return false;">
+																				<span class="icon red emphasis" id="sailDt_msg">Invalid Value</span>
+																			</div>
+																			<div class="input">
+																				<select name="sailWk" id="sailWk">
+																					<option value="2">2 Weeks</option>
+																					<option value="3">3 Weeks</option>
+																					<option value="4">4 Weeks</option>
+																					<option value="5">5 Weeks</option>
+																					<option value="6">6 Weeks</option>
+																					<option value="7">7 Weeks</option>
+																					<option value="8">8 Weeks</option>
+																				</select>
+																				<span class="icon red emphasis">Invalid Value</span>
+																			</div>
+																		</div>
+																		<div class="input-inner" id="vtypeArea2" style="display: none; margin-bottom: 5px">
+																			<div class="input">
+																				<select id="sailSelYear" style="width: 140px"><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option></select>
+																				<span class="icon red emphasis">Invalid Value</span>
+																			</div>
+																			<div class="input">
+																				<select id="sailSelMonth">
+																					<option selected="" value="01">01</option>
+																					<option value="02">02</option>
+																					<option value="03">03</option>
+																					<option value="04">04</option>
+																					<option value="05">05</option>
+																					<option value="06">06</option>
+																					<option value="07">07</option>
+																					<option value="08">08</option>
+																					<option value="09">09</option>
+																					<option value="10">10</option>
+																					<option value="11">11</option>
+																					<option value="12">12</option>
+																				</select>
+																				<span class="icon red emphasis">Invalid Value</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="input-area">
+																		<div class="label-area">
+																			<div class="label">Priority</div>
+																		</div>
+																		<div class="input-inner">
+																			<div class="input">
+																				<select name="prty" id="prty">
+																					<option value="A">All</option>
+																					<option value="D">Direct</option>
+																					<option value="T">T/S</option>
+																				</select>
+																				<span class="icon red emphasis">Invalid Value</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="input-area" id="sortByArea">
+																		<div class="label-area">
+																			<div class="label">Sort by</div>
+																		</div>
+																		<div class="input-inner">
+																			<div class="input">
+																				<select name="stBy" id="stBy">
+																					<option value="D">Departure Date</option>
+																					<option value="T">T/Time</option>
+																				</select>
+																				<span class="icon red emphasis">Invalid Value</span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="bt-btn-wrap">
+															<button type="button" class="btn large" onclick="gotoPortToPort()">Retrieve</button>
+														</div>
+													</div>
+												</li>
+												<li class="tab-item">
+													<a href="javascript:void(0);">
+														<div class="tab">by Port</div>
+													</a>
+													<div class="tab-area schedule-con-area">
+														<form name="schedulesForm" method="post">
+															<div class="schedule-con-list-wrap by-port">
+																<div class="field-wrap">
+																	<div class="input-item col-2">
+																		<div class="input-area">
+																			<div class="label-area">
+																				<div class="label">Port Name</div>
+																				<div class="sub-text">Input a Port location (at least 2 characters)</div>
+																			</div>
+																			<div class="input-inner">
+																				<div class="input" id="portNm_area">
+																					<input type="text" name="portNm" id="portNm" autocomplete="off" class="ac_input">
+																					<input type="hidden" id="portNm_code">
+																					<span class="icon red emphasis" id="portNm_msg">Invalid Value</span>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="input-item col-2">
+																		<div class="input-area">
+																			<div class="label-area">
+																				<div class="label">Period</div>
+																			</div>
+																			<div class="input-inner">
+																				<div class="input" style="width: 50%" id="portFromDt_area">
+																					<input type="date" id="portFromDt">
+																					<span class="icon red emphasis" id="portFromDt_msg">Invalid Value</span>
+																				</div>
+																				<div class="text">~</div>
+																				<div class="input" style="width: 50%" id="portToDt_area">
+																					<input type="date" id="portToDt">
+																					<span class="icon red emphasis" id="portToDt_msg">Invalid Value</span>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="input-item">
+																		<div class="input-area">
+																			<div class="label-area">
+																				<div class="label">View Type</div>
+																			</div>
+																			<div class="input-inner">
+																				<div class="input">
+																					<label class="radio-area">
+																						<input type="radio" name="viewtype" value="1">
+																						<span class="radio-box"></span>
+																						<span>Including Feeder Vessel</span>
+																					</label>
+																					<label class="radio-area">
+																						<input type="radio" name="viewtype" value="2" checked="">
+																						<span class="radio-box"></span>
+																						<span>Mother Vessel Only</span>
+																					</label>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="bt-btn-wrap">
+																<button type="button" class="btn large" onclick="gotoByPort()">Retrieve</button>
+															</div>
+														</form>
+													</div>
+												</li>
+
+												<li class="tab-item">
+													<a href="javascript:void(0);">
+														<div class="tab">by Vessel Name</div>
+													</a>
+													<div class="tab-area schedule-con-area">
+														<form name="schedulesForm" method="post">
+															<div class="schedule-con-list-wrap vessel-schedule">
+																<div class="field-wrap">
+																	<div class="input-item col-2">
+																		<div class="input-area">
+																			<div class="label-area">
+																				<div class="label">Vessel Name</div>
+																			</div>
+																			<div class="input-inner">
+																				<div class="input" id="selectVslCd_area">
+																					<select name="selectVslNm" id="selectVslCd">
+																						<option value="">Select</option>
+																						<option value="FDEU">AMADEUS A</option>
+																						<option value="JASW">ASTERIOS</option>
+																						<option value="JABT">ATI BHUM</option>
+																						<option value="FBFO">BF TROUT</option>
+																						<option value="JBAX">BUENAVENTURA EXPRESS</option>
+																						<option value="JBOX">BUENOS AIRES EXPRESS</option>
+																						<option value="JCQS">CAUQUENES</option>
+																						<option value="JLOT">CHARLOTTE SCHULTE</option>
+																						<option value="JBWH">CMA CGM BLUE WHALE</option>
+																						<option value="JOHN">CMA CGM DOLPHIN</option>
+																						<option value="JRAY">CMA CGM MANTA RAY</option>
+																						<option value="JCBK">CNC BANGKOK</option>
+																						<option value="JAGF">CNC MARS</option>
+																						<option value="J9TN">CNC TBN</option>
+																						<option value="JFID">CONFIDENCE</option>
+																						<option value="JCOQ">CONTI CONQUEST</option>
+																						<option value="JTIS">CONTI CONTESSA</option>
+																						<option value="JCTL">CONTI CRYSTAL</option>
+																						<option value="JCLL">CORNEILLE</option>
+																						<option value="JCPU">CTP MAKASSAR</option>
+																						<option value="JDWJ">DP WORLD JEBEL ALI</option>
+																						<option value="JDWD">DP WORLD JEDDAH</option>
+																						<option value="JEBU">ESL BUSAN</option>
+																						<option value="JEDN">ESL DANA</option>
+																						<option value="JEKR">ESL KABIR</option>
+																						<option value="JESA">ESL SANA</option>
+																						<option value="JESK">ESL SHEKOU</option>
+																						<option value="JEWF">ESL WAFA</option>
+																						<option value="JWSL">ESL WASL</option>
+																						<option value="JSTD">EVER STEADY</option>
+																						<option value="JESG">EVER STRONG</option>
+																						<option value="JSUP">EVER SUPERB</option>
+																						<option value="JUCN">EVER UNICORN</option>
+																						<option value="JUBN">EVER URBAN</option>
+																						<option value="JGGL">GFS GALAXY</option>
+																						<option value="HTHP">HAIAN OPUS</option>
+																						<option value="JKHS">HAKATA SEOUL</option>
+																						<option value="JHNO">HANOI EXPRESS</option>
+																						<option value="JHSA">HEUNG-A SARAH</option>
+																						<option value="JHAY">HEUNG-A YOUNG</option>
+																						<option value="HOAC">HMM ALGECIRAS</option>
+																						<option value="HOAQ">HMM AQUAMARINE</option>
+																						<option value="HHBN">HMM BANGKOK</option>
+																						<option value="HHCE">HMM CEBU</option>
+																						<option value="HHCT">HMM CHITTAGONG</option>
+																						<option value="HHCB">HMM COLOMBO</option>
+																						<option value="HOCO">HMM COPENHAGEN</option>
+																						<option value="HODA">HMM DAON</option>
+																						<option value="HHDA">HMM DAVAO</option>
+																						<option value="HHDK">HMM DHAKA</option>
+																						<option value="HODM">HMM DIAMOND</option>
+																						<option value="HHDV">HMM DRIVE</option>
+																						<option value="HODU">HMM DUBLIN</option>
+																						<option value="HOEM">HMM EMERALD</option>
+																						<option value="HOFS">HMM FOREST</option>
+																						<option value="HOGO">HMM GAON</option>
+																						<option value="HOGR">HMM GARAM</option>
+																						<option value="HOGN">HMM GARNET</option>
+																						<option value="HOGD">HMM GDANSK</option>
+																						<option value="HOGE">HMM GREEN</option>
+																						<option value="HOHA">HMM HAMBURG</option>
+																						<option value="HOBD">HMM HANBADA</option>
+																						<option value="HOHL">HMM HANUL</option>
+																						<option value="HOHM">HMM HARMONY</option>
+																						<option value="HHHV">HMM HARVEST</option>
+																						<option value="HHHO">HMM HOPE</option>
+																						<option value="HOLE">HMM LE HAVRE</option>
+																						<option value="HHMN">HMM MANILA</option>
+																						<option value="HOMT">HMM MASTER</option>
+																						<option value="HOMI">HMM MIR</option>
+																						<option value="HOMC">HMM MIRACLE</option>
+																						<option value="HHMO">HMM MONGLA</option>
+																						<option value="HONR">HMM NURI</option>
+																						<option value="HHOK">HMM OAKLAND</option>
+																						<option value="HTON">HMM OCEAN</option>
+																						<option value="HOOP">HMM OPAL</option>
+																						<option value="HOOS">HMM OSLO</option>
+																						<option value="HOPL">HMM PEARL</option>
+																						<option value="HOPD">HMM PERIDOT</option>
+																						<option value="HHPP">HMM PROMISE</option>
+																						<option value="HORA">HMM RAON</option>
+																						<option value="HORB">HMM RUBY</option>
+																						<option value="HOSR">HMM SAPPHIRE</option>
+																						<option value="HTSY">HMM SKY</option>
+																						<option value="HOSO">HMM SOUTHAMPTON</option>
+																						<option value="HOSP">HMM ST PETERSBURG</option>
+																						<option value="HOSK">HMM STOCKHOLM</option>
+																						<option value="HOTP">HMM TOPAZ</option>
+																						<option value="HOTQ">HMM TURQUOISE</option>
+																						<option value="HHVC">HMM VANCOUVER</option>
+																						<option value="FHB2">HR BALU</option>
+																						<option value="JHHB">HUMBOLDT EXPRESS</option>
+																						<option value="HHBV">HYUNDAI BRAVE</option>
+																						<option value="HHCR">HYUNDAI COURAGE</option>
+																						<option value="HHDT">HYUNDAI DYNASTY</option>
+																						<option value="HHER">HYUNDAI EARTH</option>
+																						<option value="HHFA">HYUNDAI FAITH</option>
+																						<option value="HHFC">HYUNDAI FORCE</option>
+																						<option value="HHGW">HYUNDAI GOODWILL</option>
+																						<option value="HHGR">HYUNDAI GRACE</option>
+																						<option value="HHHK">HYUNDAI HONGKONG</option>
+																						<option value="HHIT">HYUNDAI INTEGRAL</option>
+																						<option value="HHJR">HYUNDAI JUPITER</option>
+																						<option value="HHMR">HYUNDAI MARS</option>
+																						<option value="HHNT">HYUNDAI NEPTUNE</option>
+																						<option value="HHPU">HYUNDAI PARAMOUNT</option>
+																						<option value="HHPA">HYUNDAI PLATINUM</option>
+																						<option value="HHPO">HYUNDAI PLUTO</option>
+																						<option value="HHPE">HYUNDAI PREMIUM</option>
+																						<option value="HHPV">HYUNDAI PRIVILEGE</option>
+																						<option value="HHST">HYUNDAI SATURN</option>
+																						<option value="HHSU">HYUNDAI SUPREME</option>
+																						<option value="HHTK">HYUNDAI TOKYO</option>
+																						<option value="HHUN">HYUNDAI UNITY</option>
+																						<option value="HHVO">HYUNDAI VOYAGER</option>
+																						<option value="JIQE">IQUIQUE EXPRESS</option>
+																						<option value="JITX">ITAJAI EXPRESS</option>
+																						<option value="JIUS">ITAL UNIVERSO</option>
+																						<option value="JKIU">KITI BHUM</option>
+																						<option value="JKDH">KMTC DELHI</option>
+																						<option value="JKJT">KMTC JAKARTA</option>
+																						<option value="JKSJ">KOTA SEJATI</option>
+																						<option value="JKLI">KUO LIN</option>
+																						<option value="JKLO">KUO LONG</option>
+																						<option value="JLOC">LADY OF LUCK</option>
+																						<option value="JLMX">LIMA EXPRESS</option>
+																						<option value="FFL0">LINAU 108</option>
+																						<option value="JDGE">LOS ANDES BRIDGE</option>
+																						<option value="JMZX">MANZANILLO EXPRESS</option>
+																						<option value="FM26">MEKONG 26</option>
+																						<option value="JMHC">MH PEGASUS</option>
+																						<option value="JMOG">MOGRAL</option>
+																						<option value="JCEB">MOL CELEBRATION</option>
+																						<option value="JCRM">MOL CHARISMA</option>
+																						<option value="JOUR">MOL COURAGE</option>
+																						<option value="JRET">MOL CREATION</option>
+																						<option value="JMLE">MOL EARNEST</option>
+																						<option value="JEPN">MOL EXPERIENCE</option>
+																						<option value="JMPU">MOL PREMIUM</option>
+																						<option value="JMDX">MONTEVIDEO EXPRESS</option>
+																						<option value="JALG">MSC ALLEGRA</option>
+																						<option value="JMAN">MSC ANNA</option>
+																						<option value="JRIN">MSC ARINA</option>
+																						<option value="JAUD">MSC AUDREY</option>
+																						<option value="JAZR">MSC AZRA</option>
+																						<option value="JBIR">MSC BARI</option>
+																						<option value="JBTN">MSC BETTINA</option>
+																						<option value="JBVA">MSC BIANCA SILVIA</option>
+																						<option value="JMCC">MSC C. MONTAINE</option>
+																						<option value="JDID">MSC CANDIDA</option>
+																						<option value="JMCR">MSC CARMELA</option>
+																						<option value="JMCN">MSC CATANIA</option>
+																						<option value="JCYO">MSC CHIYO</option>
+																						<option value="JMCD">MSC CLAUDE GIRARDET</option>
+																						<option value="JCTI">MSC CRISTINA</option>
+																						<option value="JSRL">MSC DARLENE</option>
+																						<option value="JCEI">MSC DEILA</option>
+																						<option value="JDIA">MSC DIANA</option>
+																						<option value="JDIT">MSC DITTE</option>
+																						<option value="JELO">MSC ELOANE</option>
+																						<option value="JMFT">MSC FATMA</option>
+																						<option value="JFEB">MSC FEBE</option>
+																						<option value="JMGY">MSC GAYANE</option>
+																						<option value="JMGV">MSC GENOVA</option>
+																						<option value="JCLC">MSC GERMANY</option>
+																						<option value="JCOO">MSC GIOIA TAURO</option>
+																						<option value="JMIU">MSC GIUSY</option>
+																						<option value="JMHG">MSC HAMBURG</option>
+																						<option value="JMDN">MSC IDANIA</option>
+																						<option value="JSEI">MSC ILENIA</option>
+																						<option value="JIST">MSC ISTANBUL</option>
+																						<option value="JMVA">MSC IVA</option>
+																						<option value="JJAD">MSC JADE</option>
+																						<option value="JWEL">MSC JEWEL</option>
+																						<option value="JMJF">MSC JOSEFINA</option>
+																						<option value="JLTT">MSC JULIETTE</option>
+																						<option value="JKLN">MSC KALINA</option>
+																						<option value="JLLA">MSC LELLA</option>
+																						<option value="JENI">MSC LENI</option>
+																						<option value="JLND">MSC LONDON</option>
+																						<option value="JMOA">MSC LORENZA</option>
+																						<option value="JMRU">MSC MARA</option>
+																						<option value="JMMZ">MSC MARIAGRAZIA</option>
+																						<option value="JMRR">MSC MARTINA MARIA</option>
+																						<option value="JMUU">MSC MAURA</option>
+																						<option value="JMAY">MSC MAYA</option>
+																						<option value="JMLT">MSC MELATILDE</option>
+																						<option value="JMIH">MSC MICHELLE</option>
+																						<option value="JMIN">MSC MINA</option>
+																						<option value="JMOT">MSC MONICA CRISTINA</option>
+																						<option value="JMNE">MSC NELA</option>
+																						<option value="JNWY">MSC NEW YORK</option>
+																						<option value="JNOA">MSC NOA ARIELA</option>
+																						<option value="JORN">MSC ORION</option>
+																						<option value="JOSC">MSC OSCAR</option>
+																						<option value="JPLN">MSC POH LIN</option>
+																						<option value="JMQE">MSC QUITTERIE</option>
+																						<option value="JMRZ">MSC RAYA</option>
+																						<option value="JRSM">MSC ROSA M</option>
+																						<option value="JSMM">MSC SAMAR</option>
+																						<option value="JSVN">MSC SAVONA</option>
+																						<option value="JSMN">MSC SIMONA</option>
+																						<option value="JSXN">MSC SIXIN</option>
+																						<option value="JSVV">MSC SVEVA</option>
+																						<option value="JTRT">MSC TARANTO</option>
+																						<option value="JTER">MSC TERESA</option>
+																						<option value="JTES">MSC TRIESTE</option>
+																						<option value="JVNA">MSC VALENTINA</option>
+																						<option value="JVDY">MSC VANDYA</option>
+																						<option value="JVCE">MSC VENICE</option>
+																						<option value="JMVC">MSC VICTORIA</option>
+																						<option value="JMVT">MSC VICTORINE</option>
+																						<option value="JCVL">MSC VIOLA</option>
+																						<option value="JVVA">MSC VIVIANA</option>
+																						<option value="JMVV">MSC VIVIENNE</option>
+																						<option value="JNVP">NAVIOS LAPIS</option>
+																						<option value="JNRP">NORTHERN PRACTISE</option>
+																						<option value="JTLN">NYK CONSTELLATION</option>
+																						<option value="JDAN">NYK DIANA</option>
+																						<option value="JNFG">NYK FUTAGO</option>
+																						<option value="JNMO">NYK METEOR</option>
+																						<option value="JNEU">NYK NEBULA</option>
+																						<option value="JNOC">NYK OCEANUS</option>
+																						<option value="JNON">NYK ORION</option>
+																						<option value="JRMS">NYK REMUS</option>
+																						<option value="JNRO">NYK ROMULUS</option>
+																						<option value="JNRU">NYK RUMINA</option>
+																						<option value="JNVG">NYK VEGA</option>
+																						<option value="JYVS">NYK VENUS</option>
+																						<option value="JNTA">NYK VESTA</option>
+																						<option value="JNVO">NYK VIRGO</option>
+																						<option value="JNTI">ONE ALTAIR</option>
+																						<option value="JONP">ONE APUS</option>
+																						<option value="JOAQ">ONE AQUILA</option>
+																						<option value="JACD">ONE ARCADIA</option>
+																						<option value="JNBJ">ONE BLUE JAY</option>
+																						<option value="JOCB">ONE COLUMBA</option>
+																						<option value="JNCT">ONE COMMITMENT</option>
+																						<option value="JCTY">ONE CONTINUITY</option>
+																						<option value="JOCN">ONE CONTRIBUTION</option>
+																						<option value="JOCS">ONE COSMOS</option>
+																						<option value="JNCR">ONE CRANE</option>
+																						<option value="JNCG">ONE CYGNUS</option>
+																						<option value="JEGL">ONE EAGLE</option>
+																						<option value="JFCN">ONE FALCON</option>
+																						<option value="JOFV">ONE FOREVER</option>
+																						<option value="JOFR">ONE FORTUNE</option>
+																						<option value="JOFW">ONE FORWARD</option>
+																						<option value="JOFD">ONE FREEDOM</option>
+																						<option value="JFRS">ONE FRIENDSHIP</option>
+																						<option value="JOFT">ONE FRONTIER</option>
+																						<option value="JOFU">ONE FRUITION</option>
+																						<option value="JOFE">ONE FUTURE</option>
+																						<option value="JOGR">ONE GRUS</option>
+																						<option value="JHMS">ONE HAMMERSMITH</option>
+																						<option value="JHAN">ONE HANNOVER</option>
+																						<option value="JHNB">ONE HANOI</option>
+																						<option value="JHAR">ONE HARBOUR</option>
+																						<option value="JNHW">ONE HAWK</option>
+																						<option value="JHSK">ONE HELSINKI</option>
+																						<option value="JHEH">ONE HENRY HUDSON</option>
+																						<option value="JHKR">ONE HONG KONG</option>
+																						<option value="JHLU">ONE HONOLULU</option>
+																						<option value="JHST">ONE HOUSTON</option>
+																						<option value="JHMN">ONE HUMEN</option>
+																						<option value="JNII">ONE IBIS</option>
+																						<option value="JINF">ONE INFINITY</option>
+																						<option value="JONG">ONE INGENUITY</option>
+																						<option value="JINO">ONE INNOVATION</option>
+																						<option value="JJNY">ONE INTEGRITY</option>
+																						<option value="JOIN">ONE INTELLIGENCE</option>
+																						<option value="JOML">ONE MAGDALENA</option>
+																						<option value="JMAF">ONE MAGNIFICENCE</option>
+																						<option value="JMAH">ONE MANHATTAN</option>
+																						<option value="JMTX">ONE MATRIX</option>
+																						<option value="JMEB">ONE MEISHAN</option>
+																						<option value="JMLG">ONE MILANO</option>
+																						<option value="JMIL">ONE MILLAU</option>
+																						<option value="JOMT">ONE MINATO</option>
+																						<option value="JISS">ONE MISSION</option>
+																						<option value="JMOD">ONE MODERN</option>
+																						<option value="JMNG">ONE MONACO</option>
+																						<option value="JMCG">ONE MUNCHEN</option>
+																						<option value="JNOU">ONE OLYMPUS</option>
+																						<option value="JORT">ONE ORINOCO</option>
+																						<option value="JNOH">ONE ORPHEUS</option>
+																						<option value="JNYO">ONE OWL</option>
+																						<option value="JORD">ONE READINESS</option>
+																						<option value="JORA">ONE REASSURANCE</option>
+																						<option value="JORG">ONE RECOGNITION</option>
+																						<option value="JORC">ONE RECOMMENDATION</option>
+																						<option value="JORF">ONE REINFORCEMENT</option>
+																						<option value="JPKT">ONE SPARKLE</option>
+																						<option value="JPRE">ONE SPHERE</option>
+																						<option value="JSIT">ONE SPIRIT</option>
+																						<option value="JPPP">ONE SPLENDOUR</option>
+																						<option value="JOSK">ONE STORK</option>
+																						<option value="JNSW">ONE SWAN</option>
+																						<option value="JNTU">ONE THESEUS</option>
+																						<option value="JOTD">ONE TRADITION</option>
+																						<option value="JMTS">ONE TREASURE</option>
+																						<option value="JMTU">ONE TRIBUTE</option>
+																						<option value="JMTM">ONE TRIUMPH</option>
+																						<option value="JOTR">ONE TRUST</option>
+																						<option value="JNWN">ONE WREN</option>
+																						<option value="JOSX">OSAKA EXPRESS</option>
+																						<option value="JPHB">PHOEBE</option>
+																						<option value="JPJX">POSORJA EXPRESS</option>
+																						<option value="A01A">PS3 TEMP CODE (NOT FIXED)</option>
+																						<option value="JRDA">RDO ACE</option>
+																						<option value="FRGT">REGAINING EARTH</option>
+																						<option value="JRJX">RIO DE JANEIRO EXPRESS</option>
+																						<option value="JRTA">RITA</option>
+																						<option value="FS88">SAMUDRA BINTAN 88</option>
+																						<option value="JJDB">SAN DIEGO BRIDGE</option>
+																						<option value="JSFG">SAN FRANCISCO BRIDGE</option>
+																						<option value="JSWB">SAWASDEE BALTIC</option>
+																						<option value="JSCP">SAWASDEE CAPELLA</option>
+																						<option value="JCTG">SAWASDEE CHITTAGONG</option>
+																						<option value="JEZE">SEABREEZE</option>
+																						<option value="JADO">SEASPAN ADONIS</option>
+																						<option value="JSBC">SEASPAN BEACON</option>
+																						<option value="JSSY">SEASPAN BEAUTY</option>
+																						<option value="JBLF">SEASPAN BELIEF</option>
+																						<option value="JBWE">SEASPAN BELLWETHER</option>
+																						<option value="JBEF">SEASPAN BENEFACTOR</option>
+																						<option value="JBEO">SEASPAN BEYOND</option>
+																						<option value="JSBV">SEASPAN BRAVO</option>
+																						<option value="JBZE">SEASPAN BREEZE</option>
+																						<option value="JBIH">SEASPAN BRIGHTNESS</option>
+																						<option value="JBII">SEASPAN BRILLIANCE</option>
+																						<option value="JSFN">SEASPAN FALCON</option>
+																						<option value="JBBD">SEASPAN OSAKA</option>
+																						<option value="JSTB">SEATTLE BRIDGE</option>
+																						<option value="JSVL">SEVILLIA</option>
+																						<option value="JSWS">SINAR SULAWESI</option>
+																						<option value="JSNP">SINGAPORE EXPRESS</option>
+																						<option value="JORI">SKY ORION</option>
+																						<option value="JMBS">SM BUSAN</option>
+																						<option value="JMKY">SM KWANGYANG</option>
+																						<option value="JMLH">SM LONG BEACH</option>
+																						<option value="JMNL">SM MANALI</option>
+																						<option value="JNYR">SM NEYYAR</option>
+																						<option value="JMGB">SM NINGBO</option>
+																						<option value="JMAI">SM SHANGHAI</option>
+																						<option value="JMYT">SM YANTIAN</option>
+																						<option value="FLPE">SOL PROMISE</option>
+																						<option value="JTIP">TIGER PLATA</option>
+																						<option value="JTSD">TS DALIAN</option>
+																						<option value="FTLI">TS LIANYUNGANG</option>
+																						<option value="JNBO">TS NINGBO</option>
+																						<option value="JTSI">TS SHANGHAI</option>
+																						<option value="JVTE">VANTAGE</option>
+																						<option value="JVRD">VARADA</option>
+																						<option value="JVRM">VIRA BHUM</option>
+																						<option value="JA01">WAN HAI A01</option>
+																						<option value="JA05">WAN HAI A05</option>
+																						<option value="JA11">WAN HAI A11</option>
+																						<option value="JA12">WAN HAI A12</option>
+																						<option value="JA16">WAN HAI A16</option>
+																						<option value="JWHD">WIDE HOTEL</option>
+																						<option value="JTEM">WIDE JULIET</option>
+																						<option value="JWBS">WIEBKE SCHEPERS</option>
+																						<option value="JXHZ">XIN HANG ZHOU</option>
+																						<option value="JXTC">XIN TAI CANG</option>
+																						<option value="JCOM">YM COSMOS</option>
+																						<option value="JYFT">YM FOUNTAIN</option>
+																						<option value="JMDT">YM MANDATE</option>
+																						<option value="JYMY">YM MASCULINITY</option>
+																						<option value="JYMT">YM MATURITY</option>
+																						<option value="JYST">YM MILESTONE</option>
+																						<option value="JYMO">YM MOBILITY</option>
+																						<option value="JMTY">YM MODESTY</option>
+																						<option value="JMNT">YM MOVEMENT</option>
+																						<option value="JMMU">YM MUTUALITY</option>
+																						<option value="JYOR">YM ORCHID</option>
+																						<option value="JYPL">YM PLUM</option>
+																						<option value="JTRN">YM THRONE</option>
+																						<option value="JTPT">YM TIPTOP</option>
+																						<option value="JTGR">YM TOGETHER</option>
+																						<option value="JTMT">YM TOPMOST</option>
+																						<option value="JTLY">YM TOTALITY</option>
+																						<option value="JTRQ">YM TRANQUILITY</option>
+																						<option value="JTRV">YM TRAVEL</option>
+																						<option value="JTRL">YM TRILLION</option>
+																						<option value="JTRI">YM TRIUMPH</option>
+																						<option value="JTRU">YM TRUST</option>
+																						<option value="JTRH">YM TRUTH</option>
+																						<option value="JYTT">YM TUTORIAL</option>
+																						<option value="JUBI">YM UBIQUITY</option>
+																						<option value="JUNM">YM UNANIMITY</option>
+																						<option value="JUNC">YM UNICORN</option>
+																						<option value="JUIF">YM UNIFORM</option>
+																						<option value="JUNF">YM UNIFORMITY</option>
+																						<option value="JUPS">YM UPSURGENCE</option>
+																						<option value="JYUP">YM UPWARD</option>
+																						<option value="JYUT">YM UTILITY</option>
+																						<option value="JWRM">YM WARMTH</option>
+																						<option value="JWRT">YM WARRANTY</option>
+																						<option value="JYMW">YM WEALTH</option>
+																						<option value="JWCM">YM WELCOME</option>
+																						<option value="JYWE">YM WELLHEAD</option>
+																						<option value="JWNS">YM WELLNESS</option>
+																						<option value="JWSP">YM WELLSPRING</option>
+																						<option value="JYWD">YM WIND</option>
+																						<option value="JWDW">YM WINDOW</option>
+																						<option value="JWNR">YM WINNER</option>
+																						<option value="JWSD">YM WISDOM</option>
+																						<option value="JYWS">YM WISH</option>
+																						<option value="JWIT">YM WITNESS</option>
+																						<option value="JYWO">YM WONDERLAND</option>
+																						<option value="JWND">YM WONDROUS</option>
+																						<option value="JWRD">YM WORLD</option>
+																						<option value="JWTH">YM WORTH</option>
+																						<option value="JWRH">YM WREATH</option>
+																						<option value="JYSH">YONG SHUN</option>
+																						<option value="JZML">ZENITH LUMOS</option>
+																						<option value="JZPL">ZEPHYR LUMOS</option>
+																						<option value="JZSL">ZEUS LUMOS</option>
+																						<option value="JZGT">ZHONG GU TIAN JIN</option>
+																					</select>
+																					<span class="icon red emphasis" id="selectVslCd_msg">Invalid Value</span>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="input-item col-2">
+																		<div class="input-area">
+																			<div class="label-area">
+																				<div class="label">Vessel Code</div>
+																			</div>
+																			<div class="input-inner">
+																				<div class="input" id="srhVvdCd_area">
+																					<input type="text" id="srhVvdCd">
+																					<span class="icon red emphasis" id="srhVvdCd_msg">Invalid Value</span>
+																				</div>
+																				<div class="btn-wrap" style="position: relative">
+																					<button type="button" class="btn line medium" onclick="gotoVslSkdBtn()">
+																						<div class="icon search"></div>
+																						<span style="margin-left: 40px">Find Code</span>
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="bt-btn-wrap">
+																<button type="button" class="btn large" onclick="gotoVslSkd()">Retrieve</button>
+															</div>
+														</form>
+													</div>
+												</li>
+
+												<li class="tab-item">
+													<a href="javascript:void(0);">
+														<div class="tab">Service Network</div>
+													</a>
+													<div class="tab-area schedule-con-area">
+														<form name="schedulesForm" method="post">
+															<div class="schedule-con-list-wrap service-network">
+																<div class="field-wrap">
+																	<div class="input-item col-2">
+																		<div class="input-area">
+																			<div class="label-area">
+																				<div class="label">Service Scope</div>
+																			</div>
+																			<div class="input-inner">
+																				<div class="input" id="selectSvcScp_area">
+																					<select name="selectSvcScp" id="selectSvcScp" onchange="selectChange()">
+																						<option value="">Select</option>
+																						<option value="IES">Intra-Europe [IES]</option>
+																						<option value="ISC">India Sub-Continent [ISC]</option>
+																						<option value="ASA">Intra-Asia [ASA]</option>
+																						<option value="LAS">Latin America [LAS]</option>
+																						<option value="FAS">Oceania [FAS]</option>
+																						<option value="TPS">Asia-North America [TPS]</option>
+																						<option value="NCP">Asia-North Europe [NCP]</option>
+																						<option value="MED">Asia-Mediterranean [MED]</option>
+																						<option value="TAS">Transatlantic [TAS]</option>
+																						<option value="MDE">Middle East &amp; Red sea [MDE]</option>
+																					</select>
+																					<span class="icon red emphasis" id="selectSvcScp_msg">Invalid Value</span>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="input-item col-2">
+																		<div class="input-area">
+																			<div class="label-area">
+																				<div class="label">Loop</div>
+																			</div>
+																			<div class="input-inner" id="selectChangeList">
+																				<div class="input" id="selectLoop_area">
+																					<select name="selectLoop" id="selectLoop">
+																						<option value="">Select</option>
+																						<option value="IES#FE2">Far East Europe 2 [FE2]</option>
+																						<option value="IES#FE3">Far East Europe 3 [FE3]</option>
+																						<option value="IES#FE4">Far East Europe 4 [FE4]</option>
+																						<option value="IES#MD1">Mediterranean Service 1 [MD1]</option>
+																						<option value="IES#MD2">Mediterranean Service 2 [MD2]</option>
+																						<option value="IES#MD3">Mediterranean Service 3 [MD3]</option>
+																						<option value="IES#FIM">Far East - India - Mediterranean [FIM]</option>
+																						<option value="ISC#IF2">India Feeder 2 [IF2]</option>
+																						<option value="ISC#FIM">Far East – India Mediterranean [FIM]</option>
+																						<option value="ISC#PS3">Pacific Southwest 3 Service [PS3]</option>
+																						<option value="ISC#FIL">F.E - India - Latin America Service [FIL]</option>
+																						<option value="ASA#ICN">Intra-Asia Cross Network [ICN]</option>
+																						<option value="ASA#NIS">North-China Indonesia Service [NIS]</option>
+																						<option value="ASA#KCB">Korea China Bangladesh Express [KCB]</option>
+																						<option value="ASA#TTP">Tianjin To Philippines Service [TTP]</option>
+																						<option value="ASA#JKP">Japan-Korea-Philippines Service [JKP]</option>
+																						<option value="ASA#CS2">China S.E.Asia Service 2 [CS2]</option>
+																						<option value="ASA#VTS">Vietnam Thailand Service [VTS]</option>
+																						<option value="ASA#IHP">Incheon Haiphong service [IHP]</option>
+																						<option value="ASA#JK1">Japan Korea 1 [JK1]</option>
+																						<option value="ASA#PTX">Pusan Tomakomai Express [PTX]</option>
+																						<option value="ASA#JSF">Jakarta Singapore Feeder [JSF]</option>
+																						<option value="ASA#MSF">Penang Singapore Feeder [MSF]</option>
+																						<option value="ASA#PSF">Pasir Gudang Singapore Feeder [PSF]</option>
+																						<option value="ASA#RSF">Semarang Singapore Feeder [RSF]</option>
+																						<option value="ASA#SSF">Surabaya Singapore Feeder [SSF]</option>
+																						<option value="ASA#TSF">Songkhla Singapore Feeder [TSF]</option>
+																						<option value="LAS#FLX">Far East - West Latin Express [FLX]</option>
+																						<option value="LAS#FIL">Far East - India - East Latin America Service [FIL]</option>
+																						<option value="LAS#FL2">Far East - East Latin America Service [FL2]</option>
+																						<option value="LAS#SF1">FDR for AR/UY connection [SF1]</option>
+																						<option value="LAS#NW1">New West Latin America Service 1 [NW1]</option>
+																						<option value="LAS#NW2">New West Latin America Service 2 [NW2]</option>
+																						<option value="LAS#NW3">New West Latin America Service 3 [NW3]</option>
+																						<option value="FAS#A1X">Australia No.1 Express [A1X]</option>
+																						<option value="TPS#EC2">East Coast 2 [EC2]</option>
+																						<option value="TPS#PS7">Pacific South 7 [PS7]</option>
+																						<option value="TPS#PS6">Pacific South 6 [PS6]</option>
+																						<option value="TPS#EC3">East Coast 3 [EC3]</option>
+																						<option value="TPS#EC4">East Coast 4 [EC4]</option>
+																						<option value="TPS#IAX">India America Express [IAX]</option>
+																						<option value="TPS#CPX">China Pacific Express [CPX]</option>
+																						<option value="TPS#FP2">Far East Pendulum 2 [FP2]</option>
+																						<option value="TPS#PN3">Pacific North 3 [PN3]</option>
+																						<option value="TPS#EC1">East Coast 1 [EC1]</option>
+																						<option value="TPS#MP2">Mediterranean Pendulum 2 [MP2]</option>
+																						<option value="TPS#PS3">Pacific South 3 [PS3]</option>
+																						<option value="TPS#PS4">Pacific South 4 [PS4]</option>
+																						<option value="TPS#FP1">Far East Pendulum 1 [FP1]</option>
+																						<option value="TPS#PN1">Pacific North 1 [PN1]</option>
+																						<option value="NCP#FP1">Far East Pendulum 1 [FP1]</option>
+																						<option value="NCP#FP2">Far East Pendulum 2 [FP2]</option>
+																						<option value="NCP#FE3">Far East Europe 3 [FE3]</option>
+																						<option value="NCP#FE4">Far East Europe 4 [FE4]</option>
+																						<option value="NCP#FE5">Far East Europe 5 [FE5]</option>
+																						<option value="NCP#FE6">Far East Europe 6 [FE6]</option>
+																						<option value="NCP#INX">India North Europe Express [INX]</option>
+																						<option value="MED#MD1">Mediterranean Service 1 [MD1]</option>
+																						<option value="MED#MP2">Mediterranean Pendulum 2 [MP2]</option>
+																						<option value="MED#MD3">Mediterranean Service 3 [MD3]</option>
+																						<option value="MED#MD4">Mediterranean Service 4 [MD4]</option>
+																						<option value="MED#MD5">Mediterranean Service 5 [MD5]</option>
+																						<option value="MED#FIM">Far East - India - Mediterranean [FIM]</option>
+																						<option value="TAS#TA1">Transatlantic 1 [TA1]</option>
+																						<option value="MDE#KME">Korea Middle East Express [KME]</option>
+																						<option value="MDE#GLX">Gulf Asia Liner Express [GLX]</option>
+																						<option value="MDE#CMX">China Middle East Express [CMX]</option>
+																						<option value="MDE#AGI">Asean Gulf ISC service [AGI]</option>
+																					</select>
+																					<span class="icon red emphasis" id="selectLoop_msg">Invalid Value</span>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="bt-btn-wrap">
+																<button type="button" class="btn large" onclick="gotoSvsNw()">Retrieve</button>
+															</div>
+														</form>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // 스케줄 -->
+						<!-- Track & Trace -->
+						<div class="box-wrap track">
+							<div class="box-area">
+								<div class="box-inner">
+									<div class="box-title-wrap">
+										<h2 class="box-title">Track &amp; Trace</h2>
+									</div>
+									<div class="field-wrap">
+										<div class="input-item">
+											<div class="input-area">
+												<div class="input-inner">
+													<div class="input">
+														<select name="selectKnd" id="selectKnd">
+															<option value="blNo">BL No.</option>
+															<option value="cntrNo">Container No.</option>
+															<option value="bkgNo">Booking No.</option>
+															<option value="poNo">P/O No.</option>
+														</select>
+														<span class="icon red emphasis">Invalid Value</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="input-item">
+											<div class="input-area">
+												<div class="input-inner">
+													<div class="input">
+														<input type="text" class="upper" id="selectTnt">
+														<span class="icon red emphasis">Invalid Value</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="bt-btn-wrap">
+										<button type="button" class="btn large" onclick="gotoTrkNTrc()">Retrieve</button>
+									</div>
+								</div>
+							</div>
+							<div class="box-area banner box-area2">
+								<a href="/e-service/hiquote/quotationNew.do" class="box-inner">
+									<img src="/images/e-service/sample/dashboard-hiquote2.jpg" alt="Hi-Quote Banner">
+									<div class="text">Start now</div>
+								</a>
+								<a href="/company/digital/digitalSolutionEbl.do" class="box-inner" target="_blank">
+									<img src="/images/e-service/sample/dashboard-ebl.jpg" alt="Electronic B/L Banner">
+									<div class="text">Start now</div>
+								</a>
+							</div>
+						</div>
+						<!-- // Track & Trace -->
+						<!-- 목록 영역 -->
+						<div class="box-area news">
+							<div class="box-title-wrap">
+								<h2 class="box-title">News &amp; Notices</h2>
+							</div>
+							<div class="content-wrap">
+								<div class="content-area">
+									<div class="cont-title-area">
+										<h4 class="cont-title">Local</h4>
+										<button type="button" class="icon btn-more" onclick="gotoNewAndNotice('local')"></button>
+									</div>
+									<ul class="board-list">
+										<li class="board-item">
+											<a href="javascript:void(0);" onclick="fnSearchBoardDetail(this);" data-ctntcagyno="C004001000000" data-ctntcagyseq="3001892" data-firstcategory="C004001000000" data-secondcategory="C004001000000" data-thirdcategory="C004001000000" data-ntncd="IN" data-rhq="DXBHQ">
+												<div class="subject">GRI Notice on India-Europe</div>
+												<div class="date">2024-06-13</div>
+											</a>
+										</li>
+									</ul>
+									<ul class="board-list">
+										<li class="board-item">
+											<a href="javascript:void(0);" onclick="fnSearchBoardDetail(this);" data-ctntcagyno="C004001000000" data-ctntcagyseq="3000490" data-firstcategory="C004001000000" data-secondcategory="C004001000000" data-thirdcategory="C004001000000" data-ntncd="IN" data-rhq="DXBHQ">
+												<div class="subject">Customer Advisory - HSS Bottle Type Seals Required on Shipments to India</div>
+												<div class="date">2023-08-01</div>
+											</a>
+										</li>
+									</ul>
+									<ul class="board-list">
+										<li class="board-item">
+											<a href="javascript:void(0);" onclick="fnSearchBoardDetail(this);" data-ctntcagyno="C004008001000" data-ctntcagyseq="1212431" data-secondcategory="C004008001000" data-thirdcategory="C004008001000" data-ntncd="IN" data-rhq="DXBHQ">
+												<div class="subject">GRI NOTICE FOR EAST COAST OF SOUTH AMERICA FROM NORTH INDIA LOCATION</div>
+												<div class="date">2023-04-12</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="content-area">
+									<div class="cont-title-area">
+										<h4 class="cont-title">Global</h4>
+										<button type="button" class="icon btn-more" onclick="gotoNewAndNotice('global')"></button>
+									</div>
+									<ul class="board-list">
+										<li class="board-item">
+											<a href="javascript:void(0);" onclick="fnSearchBoardDetail(this);" data-ctntcagyno="C004003000000" data-ctntcagyseq="3003649" data-firstcategory="C004003000000" data-secondcategory="C004003000000" data-thirdcategory="C004003000000" data-ntncd="IN" data-rhq="DXBHQ">
+												<div class="subject">JK1航路 CONFIDENCE 0217Wスケジュール変更案内</div>
+												<div class="date">2025-05-29</div>
+											</a>
+										</li>
+									</ul>
+									<ul class="board-list">
+										<li class="board-item">
+											<a href="javascript:void(0);" onclick="fnSearchBoardDetail(this);" data-ctntcagyno="C004004000000" data-ctntcagyseq="3003641" data-firstcategory="C004004000000" data-secondcategory="C004004000000" data-thirdcategory="C004004000000" data-ntncd="IN" data-rhq="DXBHQ">
+												<div class="subject">European Ports Operational Status Update (WK22)</div>
+												<div class="date">2025-05-27</div>
+											</a>
+										</li>
+									</ul>
+									<ul class="board-list">
+										<li class="board-item">
+											<a href="javascript:void(0);" onclick="fnSearchBoardDetail(this);" data-ctntcagyno="C004004000000" data-ctntcagyseq="3003613" data-firstcategory="C004004000000" data-secondcategory="C004004000000" data-thirdcategory="C004004000000" data-ntncd="IN" data-rhq="DXBHQ">
+												<div class="subject">European Ports Operational Status Update (WK21)</div>
+												<div class="date">2025-05-20</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- // 목록 영역 -->
+					</div>
+				</div>
+			</div>
+			<!-- For Mobile -->
+			
+		</div>
+			<div></div>
+			<!-- 메인 영역 팝업 DIV 영역 -->
+			<div id="comContentsPopup" class="popup-container" data-tagid="popup-container" style="display: none"></div>
+			<footer>
+		<div class="footer-inner">
+            <div class="info-area">
+                
+                
+					<div class="policies">
+	                    <a href="/company/emailcolrjt.do" class="policy">Cookie Policy</a>
+	                    <a href="/company/privacypolicy.do" class="policy">Privacy Policy</a>
+	                    <a href="/e-service/auth/TermOfUse.do" class="policy">Terms of Use</a>
+	                </div>
+				
+				<div class="footer-logo">
+                    <div class="icon logo-icon"></div>
+                </div>
+                <div class="copyright">
+                    © 2023. HMM CO.,LTD. All Rights Reserved.
+                </div>
+            </div>
+            <div class="link-area">
+                <div class="sns-area">
+                    <ul class="sns-list">
+                        <li class="sns-item">
+                            <a href="https://www.linkedin.com/company/hyundai-merchant-marine" target="_blank" class="icon sns linkin">linkedin</a>
+                        </li>
+                        <li class="sns-item">
+                        	<a href="https://www.instagram.com/hmm21.official/" target="_blank" class="icon sns insta">Instagram</a>
+                        </li>
+                        <li class="sns-item">
+                            <a href="https://www.facebook.com/hmm21.official/" target="_blank" class="icon sns faceb">Facebook</a>
+                        </li>
+                        <li class="sns-item">
+                            <a href="https://www.youtube.com/hmmofficial1976" target="_blank" class="icon sns ytube">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="site-area">
+                    <select name="" id="" onchange="window.open(value);">
+                    	<option value="https://www.hmm21.com/" selected="selected">Affiliate site</option>
+                        <option value="http://www.uswut.com">Washington United Terminals(WUT)</option>
+                        <option value="http://www.shipcut.com">California United Terminals(CUT)</option>
+                        
+                        <option value="http://www.uicd.co.kr">Uiwang ICD</option>
+                        <option value="http://www.hpnt.co.kr">Hyundai Pusan New-Port Terminal (HPNT)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn func noicon btn-visit" onclick="desktopMode()">Visit the Full Version of e- Service</button>
+        <script type="text/javascript" src="/js/e-service/desktopMode.js?version=1.0"></script><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    </footer>
+			<div id="comProcessBar" class="loading-container hidden">
+				<div class="loading"></div>
+			</div>
+		<noscript><img src="https://www.hmm21.com/akam/13/pixel_388bb2f6?a=dD0yMjYxMzM2MTBlZTkzNWZjYTU4YmYzMTk2ODBjMzEwNGFhNzZjMGE4JmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript><script type="text/javascript" src="/E1ibNmiqlXF3dmdWpg/YcfiVcb8tJcGr9/TjMHBgEB/MhppKjN/JMm0"></script>
+	
+
+</body></html>

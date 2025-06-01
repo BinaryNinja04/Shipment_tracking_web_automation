@@ -1,0 +1,30 @@
+{"query": "Get status of MAEU7654321", "action": "retrieved_from_cache", "container_found": "MAEU7654321"}
+{"query": "Track HMMU1234567", "action": "retrieved_from_cache", "container_found": "HMMU1234567"}
+{"query": "Find shipping info for SINI98765432", "action": "retrieved_from_cache", "container_found": "SINI98765432"}
+{"query": "rack status of MAEU7654321", "action": "retrieved_from_cache", "container_found": "MAEU7654321"}
+{"query": "track  MAEU7654321", "action": "retrieved_from_cache", "container_found": "MAEU7654321"}
+{"query": "track HMMU1234567", "action": "retrieved_from_cache", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 track this", "action": "retrieved_from_cache", "container_found": "HMMU1234567"}
+{"query": "track the shipment HMMU1234567", "action": "executed_browser_automation", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 track this shipment", "action": "executed_browser_automation", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 is to be tracked", "action": "executed_browser_automation", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 iss", "action": "executed_browser_automation", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 please", "action": "iframe", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 please bhai", "action": "cache_hit", "container": "HMMU1234567", "url": "http://www.shippingline.org/track/?container=HMMU1234567"}
+{"query": "HMMU1234567jk", "action": "cache_hit", "container": "HMMU1234567", "url": "http://www.shippingline.org/track/?container=HMMU1234567"}
+{"query": "HMMU1234567 ak", "action": "iframe_flow", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 to", "action": "iframe_flow", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 pp", "action": "hmm_flow", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 hh", "action": "hmm_flow", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 nn", "action": "hmm_flow", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 m", "action": "hmm_flow", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 ff", "action": "hmm_flow", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 h", "action": "hmm_flow", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 k", "action": "hmm_flow", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 trrs", "action": "hmm_flow", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 ssd", "action": "hmm_flow", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 gg", "action": "iframe_flow", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 c", "action": "hmm_flow", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 f", "action": "hmm_flow", "container_found": "HMMU1234567"}
+{"query": "HMMU1234567 fd", "action": "hmm_flow", "container_found": "HMMU1234567"}
+{"query": "SINI25432400 track", "action": "iframe_flow", "container_found": "SINI25432400"}
