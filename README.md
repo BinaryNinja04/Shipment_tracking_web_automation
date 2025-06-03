@@ -19,7 +19,7 @@ Playwright is used for browser automation, dynamically filling and submitting th
 No web elements are hardcoded — all form inputs are identified generically.
 
 🧠 Example Prompt  
-Get tracking info for HMM booking ID SINI25432400
+Get tracking info for booking ID SINI25432400
 
 🤖 Technologies Used  
 spaCy for NLP  
@@ -85,7 +85,7 @@ Mac/Linux:
 
 🔄 Sample Run Output:  
 🗣️ Enter your request:  
-Get tracking info for HMM booking ID SINI25432400
+Get tracking info for booking ID SINI25432400
 
 🤖 Using spaCy to extract the container number...  
 📦 Container number extracted: SINI25432400  
